@@ -1,0 +1,41 @@
+.board{
+    position: relative;
+  
+    display: grid;
+    grid-template-columns: auto ;
+
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 21px 0px rgba(166,166,166,0.91);
+   
+}
+
+.board-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: no-repeat;
+    background-size: cover;
+    background-image: url('../images/back-image.jpg');
+}
+
+.cell{
+    background-color: aliceblue;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cell.not-empty{
+    pointer-events: none;
+}
+
+.alert-container{
+    
+}
